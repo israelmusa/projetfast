@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <title>MON SITE</title>
+</head>
+
+<body class="bg-gray-50">
+    <nav
+        class="nav md:h-[11vh] h-[13vh] bg-green-800 flex md:justify-between z-0 justify-center items-center pl-4 pr-4 fixed top-[89%] md:top-0 w-full">
+        <div
+            class="lala md:w-[8%] md:h-[10vh] hidden w-[35%] h-[22vh] shadow-md shadow-white md:flex items-center bg-green-800 justify-center  flex-col rounded-[50%]">
+            <p class="md:text-3xl text-2xl text-white font-black  -mb-1">fast</p>
+            <div class="flex justify-end w-[80%] md:w-[80%]">
+                <!-- ///////// ---logo--- \\\\\\\\\-->
+                <svg class="md:mb-2 mt-1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <g fill="#fff" fill-rule="evenodd">
+                        <path
+                            d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                        <path fill="#fff" fill-rule="nonzero"
+                            d="M14 3a2 2 0 0 1 2 2h3a2 2 0 0 1 2 2v2a2 2 0 0 1-1.51 1.94l2.142 4.996c.264.527.368.985.368 1.564a3.5 3.5 0 0 1-6.663 1.5H9.663a3.5 3.5 0 0 1-6.628-1H3a1 1 0 0 1-1-1V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2a2 2 0 1 0 4 0V5h-2a1 1 0 1 1 0-2zM6.5 16a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3m12 0a1.5 1.5 0 1 0 1.5 1.5c0-.811-.685-1.5-1.5-1.5m-1.16-5H16a4 4 0 0 1-7.465 2H4v2.05A3.5 3.5 0 0 1 9.965 17h5.07c.25-1.749 1.83-3.06 3.592-2.998L17.341 11ZM8 9H4v2h4zm11-2h-3v2h3z" />
+                    </g>
+                </svg>
+
+                <p class="md:text-base text-xl text-white font-black">express</p>
+            </div>
+        </div>
+        <div class="flex justify-center md:gap-4 gap-10 md:w-[30%] w-[98%] h-[12vh]">
+            <a href="/views/client/acceuil.html"
+                class="hover:border-b-4 hover:bg-green-400/20 hover:border-b-white h-[11vh] md:w-[17%] w-[30%] flex justify-center items-center">
+                <!-- //////// home \\\\\\\ -->
+                <svg class="icc" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="white"
+                        d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1" />
+                </svg>
+            </a>
+            <a href=""
+                class="hover:border-b-4 hover:bg-green-400/20 hover:border-b-white h-[11vh] md:w-[17%] w-[30%] flex justify-center items-center">
+                <!-- box -->
+                <svg class="icc" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="#fff"
+                        d="M5 21q-.825 0-1.412-.587T3 19V6.525q0-.35.113-.675t.337-.6L4.7 3.725q.275-.35.687-.538T6.25 3h11.5q.45 0 .863.188t.687.537l1.25 1.525q.225.275.338.6t.112.675V19q0 .825-.587 1.413T19 21zm.4-15h13.2l-.85-1H6.25zM16 8H8v6.375q0 .575.475.863t.975.037L12 14l2.55 1.275q.5.25.975-.038t.475-.862z" />
+                </svg>
+            </a>
+            <a href="/views/client/panier.html"
+                class="hover:border-b-4 hover:bg-green-400/20 hover:border-b-white h-[11vh] md:w-[17%] w-[30%] flex justify-center items-center">
+                <!-- ///////// cart \\\\\\\\ -->
+                <svg class="icc" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="#fff"
+                        d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
+                </svg>
+            </a>
+            <a href="/views/client/order.html"
+                class="hover:border-b-4 hover:bg-green-400/20 hover:border-b-white h-[11vh] md:w-[17%] w-[30%] flex justify-center items-center">
+
+                <!-- //////// oder \\\\\\\ -->
+                <svg class="icc" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path id="ic" fill="black" fill-rule="evenodd"
+                        d="M8.25 7.013V6a3.75 3.75 0 1 1 7.5 0v1.013c1.297.037 2.087.17 2.692.667c.83.68 1.06 1.834 1.523 4.143l.6 3c.664 3.32.996 4.98.096 6.079S18.067 22 14.68 22H9.32c-3.386 0-5.08 0-5.98-1.098s-.568-2.758.096-6.079l.6-3c.462-2.309.693-3.463 1.522-4.143c.606-.496 1.396-.63 2.693-.667M9.75 6a2.25 2.25 0 0 1 4.5 0v1h-4.5zM15 11a1 1 0 1 0 0-2a1 1 0 0 0 0 2m-5-1a1 1 0 1 1-2 0a1 1 0 0 1 2 0"
+                        clip-rule="evenodd" />
+                </svg>
+            </a>
+            <a href="/views/client/profil.html"
+                class="hover:border-b-4 hover:bg-green-400/20 hover:border-b-white h-[11vh] md:w-[17%] w-[30%] flex justify-center items-center">
+                <!-- //////// account \\\\\\\ -->
+                <svg class="icc" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="#fff"
+                        d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4" />
+                </svg>
+            </a>
+        </div>
+        <div></div>
+    </nav>
+    <nav
+        class="nav md:static w-full fixed top-0 md:hidden flex z-10 items-center md:gap-4 md:pl-5 pl-2 md:pt-28 mb-8 md:h-40 h-20 md:bg-transparent bg-green-800">
+        <div
+            class="md:w-[4%] w-[17%] h-[8vh] border border-gray-500 rounded-[50%] bg-gray-100 md:bg-black/20 flex justify-center items-center">
+            <!-- //////// account \\\\\\\ -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="#707070"
+                    d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4" />
+            </svg>
+        </div>
+        <div class=" md:w-[20%] w-[37%] h-[9vh] md:pl-5 pl-3 md:bg-gray-400 flex flex-col justify-center rounded-2xl">
+            <p class="pnam font-bold text-lg md:text-black text-white"></p>
+            <p class="pbien md:text-black text-white"></p>
+        </div>
+        <div class="w-[70%] h-[8vh] flex gap-2  justify-end items-center md:pr-0 pr-2">
+            <p id="pays"><svg class="md:block hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    viewBox="0 0 21 21">
+                    <path d="M0 0h21v21H0z" fill="none" />
+                    <g fill="none" fill-rule="evenodd" stroke="#e61010" stroke-linecap="round" stroke-linejoin="round"
+                        transform="translate(4 2)">
+                        <path
+                            d="m6.5 16.54l.631-.711Q8.205 14.6 9.064 13.49l.473-.624Q12.5 8.875 12.5 6.533C12.5 3.201 9.814.5 6.5.5s-6 2.701-6 6.033q0 2.342 2.963 6.334l.473.624a55 55 0 0 0 2.564 3.05" />
+                        <circle cx="6.5" cy="6.5" r="2.5" />
+                    </g>
+                </svg>
+                <svg class="md:hidden block" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    viewBox="0 0 21 21">
+                    <path d="M0 0h21v21H0z" fill="none" />
+                    <g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                        transform="translate(4 2)">
+                        <path
+                            d="m6.5 16.54l.631-.711Q8.205 14.6 9.064 13.49l.473-.624Q12.5 8.875 12.5 6.533C12.5 3.201 9.814.5 6.5.5s-6 2.701-6 6.033q0 2.342 2.963 6.334l.473.624a55 55 0 0 0 2.564 3.05" />
+                        <circle cx="6.5" cy="6.5" r="2.5" />
+                    </g>
+                </svg>
+
+            </p>
+            <p id="local" class="md:text-black text-white font-bold"></p>
+            <p id="locale" class="md:text-black text-white font-bold"></p>
+        </div>
+    </nav>
+    <section class="flex flex-col gap-4 mt-22 items-center">
+        <div class="lala w-[90%] bg-white h-[83vh] rounded-xl shadow-lg p-6">
+            <h1 class="font-bold text-2xl mb-3">Mes commande</h1>
+            <div class=" w-[85%] h-[20vh] flex gap-5 ">
+                <div
+                    class="w-[27%] h-[13vh] flex gap-2 justify-center items-center border-2 border-green-300 rounded-lg">
+                    <div
+                        class="w-[17%] flex justify-center items-center h-[7vh] rounded-full bg-green-300 text-green-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmls="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col w-[70%]">
+                        <h2 class="font-bold text-green-600">Completed</h2>
+                        <p class="text-2xl font-bold" id="reussir">0</p>
+                    </div>
+                </div>
+                <div class="w-[27%] h-[13vh] flex gap-2 justify-center items-center border-2 border-red-300 rounded-lg">
+                    <div class="w-[17%] flex justify-center items-center h-[7vh] rounded-full bg-red-300 text-red-600">
+                        <p class="font-bold text-3xl">&times;</p>
+
+                    </div>
+                    <div class="flex flex-col w-[70%]">
+                        <h2 class="font-bold text-red-600">Refus</h2>
+                        <p id="chiffre" class="text-2xl font-bold">0</p>
+                    </div>
+
+                </div>
+                <div></div>
+            </div>
+            <div class="w-[80%] h-[50vh] overflow-y-auto no-scrollbar">
+                <table>
+                    <thead class="w-full table-fixed border-collapse">
+                        <tr class="border-b-2 pb-2 border-b-gray-600 ">
+                            <th class="font-bold text-left py-2 px-4">N Commande</th>
+                            <th class="font-bold text-left py-2 px-4">Date</th>
+                            <th class="font-bold text-left py-2 px-4">Prix total</th>
+                            <th class="font-bold text-left py-2 px-4">Paiment</th>
+                            <th class="font-bold text-left py-2 px-4">Statut</th>
+                            <th class="font-bold text-left py-2 px-4">Action 1</th>
+                            <th class="font-bold text-left py-2 px-4">Action 2</th>
+                            <th class="font-bold text-left py-2 px-4">Action 3</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbo w-[95%]">
+
+                    </tbody>
+                </table>
+                <div></div>
+            </div>
+        </div>
+        <div id="modal"
+            class="hidden fixed inset-0 z-50 bg-black/20 backdrop-blur-2xl overflow-y-auto no-scrollbar flex items-center justify-center">
+            <div class="lala bg-white rounded-lg p-6 max-w-md w-full">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-bold">Details du commande</h2>
+                    <span id="closemodal" class="cursor-pointer text-4xl">&times;</span>
+                </div>
+                <div id="modcont"></div>
+            </div>
+        </div>
+        <section id="carte" class="dodo w-full h-screen hidden  justify-end pr-2 pt-12 fixed top-[75px] bg-gray-50 z-50">
+            <!-- ////////// return \\\\\\\\\ -->
+            <svg id="retu"
+                class="cursor-pointer absolute md:w-[4%] w-[12%] md:pt-2 p-2 md:pb-2 h-[7vh] md:h-[8vh] rounded-[50%] bg-white md:top-1 top-40 left-12 md:left-4"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                <path d="M0 0h512v512H0z" fill="none" />
+                <path fill="#000"
+                    d="M497.333 239.999H80.092l95.995-95.995l-22.627-22.627L18.837 256L153.46 390.623l22.627-22.627l-95.997-95.997h417.243z" />
+            </svg>
+            <div id="map" class="h-[75vh] w-[93%] pl-5 rounded-l-[70px]"></div>
+        </section>
+    </section>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/script/client/order.js"></script>
+</body>
+
+</html>

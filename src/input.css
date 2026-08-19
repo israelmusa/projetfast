@@ -1,0 +1,295 @@
+@import "tailwindcss";
+
+.black {
+    background-color: black;
+    height: 5vh;
+    transition: 3s;
+
+}
+.ttr{
+    height: 1vh;
+}
+.disp{
+    display: block;
+}
+.dispo{
+    display: none;
+}
+.bobo{
+    margin-left: 32px;
+}
+.pprr{
+    background-color: white;
+    backdrop-filter: 90px;
+}
+.ajouter {
+    width: 20%;
+    height: 15vh;
+    background-color: white;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.visible {
+    display: flex;
+    gap: 10px;
+}
+
+.fene {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    width: 87%;
+    height: 45vh;
+    background-color: #a09f9f;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 0 50px 0 50px;
+    z-index: 0;
+}
+
+.pimg {
+    border-radius: 0 50px 0 50px;
+    height: 28vh;
+    object-position: cover;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.elp {
+    height: 20vh;
+    width: 99%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.pnom {
+    font-size: 13px;
+}
+
+.pppp {
+    font-weight: bold;
+}
+
+.espace {
+    display: flex;
+}
+
+.start {
+    font-size: 17px;
+    cursor: pointer;
+    color: gray;
+}
+
+.bottom {
+    border-bottom: 1px solid gray;
+    height: 14vh;
+    padding: 5px;
+    display: flex;
+    gap: 8px;
+    position: relative;
+}
+
+.boto {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.parent {
+    width: 99%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 46px;
+    position: relative;
+    z-index: 0;
+}
+
+.fois {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(160, 2, 2);
+    bottom: 50px;
+    left: 345px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.sous {
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 14px;
+    width: 3rem;
+    height: 6vh;
+    box-shadow: 1px 1px 5px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.parc {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 9px;
+}
+
+.addi {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: 30px;
+    border-radius: 14px;
+    width: 3rem;
+    height: 6vh;
+    box-shadow: 1px 1px 5px gray;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.paimg {
+    width: 15%;
+    height: 11vh;
+    border-radius: 10px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.bplus {
+    background-color: rgb(12, 59, 12);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 85%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.fenebbb {
+    display: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.start.yellow {
+    color: #ffc107;
+}
+
+.span {
+    width: 45%;
+    cursor: pointer;
+    height: 4vh;
+    background-color: red;
+    color: white;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.spa {
+    cursor: pointer;
+    height: 6vh;
+    font-weight: bolder
+}
+.marke{
+    animation: drop 0.6s ease-out;
+}
+@keyframes drop{
+    0%{transform: translatey(-200px);opacity: 0;}
+    70%{transform: translateY(10px);opacity: 1;}
+    100%{transform: translateY(0)}
+}
+.sombre {
+    background-color: black;
+    color: white;
+}
+.navid {
+    background-color: #1d1d1d;
+    color: white;
+    border-bottom: 1px solid gray;
+}
+@media screen and (max-width:600px) {
+    .fene {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        width: 95%;
+        height: 45vh;
+        background-color: #a09f9f;
+        font-weight: bolder;
+        font-size: 15px;
+        border-radius: 0 50px 0 50px;
+        margin-bottom: 10px;
+    }
+    .pnom {
+        font-size: 16px;
+    }
+    .pprix {
+        font-size: 16px;
+    }
+    .partic {
+        font-size: 16px;
+    }
+    .pdure {
+        font-size: 16px;
+    }
+    .paimg {
+        width: 30%;
+        height: 12vh;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .bottom {
+        border-bottom: 1px solid gray;
+        height: 15vh;
+        padding: 4px;
+        display: flex;
+        gap: 8px;
+        position: relative;
+    }
+    .fois {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(160, 2, 2);
+        bottom: 68px;
+        left: 150px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 0;
+    }
+    .parc {
+        width: 80%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 9px;
+        position: absolute;
+        z-index: 0;
+        bottom: 5px;
+        left: 38px;
+    }
+    .due {
+        position: absolute;
+        bottom: 50px;
+        left: 148px;
+        font-size: 18px;
+    }
+}
